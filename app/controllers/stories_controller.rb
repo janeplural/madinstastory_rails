@@ -6,7 +6,7 @@ class StoriesController < ApplicationController
 
 	def create
 		Story.create(story_attributes)
-		redirect_to "story/#{story_attributes[:id]}"
+		redirect_to "/stories/#{params[:id]}"
 	end
 
 	def show
