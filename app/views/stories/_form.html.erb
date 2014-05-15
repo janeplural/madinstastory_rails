@@ -1,0 +1,16 @@
+<%= form_for @story, url: "/stories", method: "POST" do |f| %>
+<ul>
+  <li><%= f.text_field :place, {placeholder: "name a place!"} %></li>
+  <li><%= f.text_field :adverb, {placeholder: "pick an adverb"} %></li>
+  <li><%= f.text_field :animal, {placeholder: "name an animal!"} %></li>
+  <li><%= f.text_field :container, {placeholder: "type of container"} %></li>
+  <li><%= f.text_field :verb, {placeholder: "verb in past tense"} %></li>
+  <li><%= f.text_field :flower, {placeholder: "name a plant"} %></li>
+  <li><%= f.text_field :celeb, {placeholder: "your favorite celebrity"} %></li>
+  <li><%= f.text_field :room, {placeholder: "type of room"} %></li>
+  <li><%= f.text_field :flavor, {placeholder: "pick a flavor"} %></li>
+  <li><%= f.text_field :figment_of_i, {placeholder: "imaginary character"} %></li>
+  <li><%= f.text_field :food, {placeholder: "wouldn't want to eat this"} %></li>
+  <%= f.submit %>
+</ul>
+<% end %>
